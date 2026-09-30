@@ -11,12 +11,11 @@ __pycache__/
 .pytest_cache/
 .ruff_cache/
 
-# Generated pipeline data and reports (recreate via the scripts, don't commit)
+# Generated pipeline data and validation report (recreate via the scripts, don't commit).
+# The output/ workbook IS committed so results can be viewed without running anything.
 data/*.csv
 data/*.txt
-output/*.xlsx
 !data/.gitkeep
-!output/.gitkeep
 
 # Editor / OS junk
 .vscode/

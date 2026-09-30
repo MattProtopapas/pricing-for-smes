@@ -170,12 +170,13 @@ price-setting-for-smes/
 ├── requirements.txt
 ├── sample_results.xlsx     # example output workbook
 ├── data/                   # generated CSVs + validation report (not committed)
-└── output/                 # generated Excel workbook (not committed)
+└── output/                 # generated Excel workbook (committed)
 ```
 
-`data/` and `output/` are gitignored (apart from `.gitkeep` placeholders) since their
+`data/` is gitignored (apart from a `.gitkeep` placeholder) since its
 contents are reproducible by re-running the scripts — as is `.venv/`, so the virtual
-environment itself is never pushed to the repo.
+environment itself is never pushed to the repo. `output/` is committed, so the latest
+workbook can be opened straight from GitHub without running the pipeline.
 
 
 > **Disclaimer** — This software is provided for educational and demonstration purposes only. See the full [Disclaimer & EULA](./DISCLAIMER.md) for details.
