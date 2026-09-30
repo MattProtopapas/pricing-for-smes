@@ -1,0 +1,25 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python bytecode / caches
+__pycache__/
+*.py[cod]
+*.pyc
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# Generated pipeline data and reports (recreate via the scripts, don't commit)
+data/*.csv
+data/*.txt
+output/*.xlsx
+!data/.gitkeep
+!output/.gitkeep
+
+# Editor / OS junk
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
